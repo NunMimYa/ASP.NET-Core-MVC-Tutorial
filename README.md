@@ -3,3 +3,6 @@ Get started with ASP.NET Core MVC https://learn.microsoft.com/en-us/aspnet/core/
 #
 End of Part 3, add a view to an ASP.NET Core MVC app
 ![screenshot](EndOfPart3.PNG)
+#
+End of Part 7, add search to an ASP.NET Core MVC app
+![screenshot](EndOfPart7.PNG.PNG)
