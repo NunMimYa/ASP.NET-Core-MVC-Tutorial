@@ -5,4 +5,4 @@ End of Part 3, add a view to an ASP.NET Core MVC app
 ![screenshot](EndOfPart3.PNG)
 #
 End of Part 7, add search to an ASP.NET Core MVC app
-![screenshot](EndOfPart7.PNG.PNG)
+![screenshot](EndOfPart7.PNG)
