@@ -1,4 +1,9 @@
+ï»¿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using MvcMovie.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<MvcMovieContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("MvcMovieContext") ?? throw new InvalidOperationException("Connection string 'MvcMovieContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -28,7 +33,7 @@ app.Run();
 
 
 /*
- * MVC appelle les classes de contrôleur et les méthodes d’action qu’elles contiennent, en fonction de l’URL entrante. 
- * La logique de routage d’URL par défaut utilisée par MVC utilise un format semblable à celui-ci pour déterminer le code à appeler :
+ * MVC appelle les classes de contrï¿½leur et les mï¿½thodes dï¿½action quï¿½elles contiennent, en fonction de lï¿½URL entrante. 
+ * La logique de routage dï¿½URL par dï¿½faut utilisï¿½e par MVC utilise un format semblable ï¿½ celui-ci pour dï¿½terminer le code ï¿½ appeler :
  * /[Controller]/[ActionName]/[Parameters]
  */
